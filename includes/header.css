@@ -1,0 +1,271 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+}
+
+#up-nav {
+    background: #212529;
+    position: relative;
+    width: 100%;
+    z-index: 999;
+    line-height: 65px;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+#logo {
+    width: 130px;
+    height: 70px;
+    padding-top: 13px;
+    cursor: pointer;
+}
+
+.nav-link {
+    display: inline-flex;
+}
+
+.nav-link-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link li {
+    list-style: none;
+}
+
+.nav-link li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 9px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link a:hover {
+    color: gainsboro;
+}
+
+.drop-menu {
+    background-color: #fff;
+    width: auto;
+    top: 65px;
+    line-height: 45px;
+    display: none;
+    z-index: 999;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav-link li:hover .drop-menu {
+    display: block;
+    transition: all 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+.drop-menu li {
+    display: block;
+}
+
+.drop-menu li a {
+    font-size: 16px;
+    color: black;
+    padding: 0 20px;
+    display: block;
+}
+
+.search {
+    flex: 2;
+    margin: 0 20px;
+}
+
+.search form {
+    display: flex;
+    align-items: center;
+}
+
+.search input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#down-nav {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    line-height: 55px;
+}
+
+.wrapper2 {
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    display: inline-flex;
+}
+
+.nav-links li {
+    list-style: none;
+    color: black;
+}
+
+.nav-links li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: gainsboro;
+}
+
+.nav-links .drop-menu {
+    background-color: #fff;
+    width: auto;
+    top: 55px;
+    line-height: 45px;
+    display: none;
+    z-index: 999;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav-links li:hover .drop-menu {
+    display: block;
+    transition: all 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+}
+
+.drop-menu li {
+    display: block;
+}
+
+.drop-menu li a {
+    font-size: 16px;
+    color: black;
+    padding: 0 20px;
+    display: block;
+}
+
+.cart-count {
+    background-color: #e03b2f;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 7px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+    left: -1px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-link {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-link.active {
+        display: flex;
+    }
+
+    .nav-link li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-link li a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .search {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .search form {
+        width: 100%;
+    }
+
+    .wrapper2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+.nav-toggle {
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+}

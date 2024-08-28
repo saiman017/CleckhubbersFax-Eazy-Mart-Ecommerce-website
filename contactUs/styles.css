@@ -1,0 +1,111 @@
+/* Container Styles */
+.contactus-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    width: 80%;
+    margin-right: auto;
+    background-color: #fcfafa;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+/* Left Container Styles */
+.contactus-container .left-container {
+    flex: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.contactus-container .left-container img {
+    
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Right Container Styles */
+.contactus-container .right-container {
+    flex: 1;
+    width: 45%;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* Form Styles */
+.contactus-container form {
+    margin-top: 20px;
+}
+
+.contactus-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contactus-container input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+/* Social Media Icons Styles (Replace with your own icons) */
+.contactus-container .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contactus-container .social-icons a {
+    margin: 0 5px;
+}
+
+/* Submit Button Styles */
+.contactus-container input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 25%;
+}
+
+.contactus-container input[type="submit"]:hover {
+    background-color: #212121;
+}
+
+.contactus-container input[type="submit"]:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .contactus-container {
+        flex-direction: column;
+        align-items: center; /* Center content vertically */
+    }
+    
+    .contactus-container .left-container,
+    .contactus-container .right-container {
+        width: 100%;
+    }
+    
+    .contactus-container .right-container {
+        margin-left: 0; /* Reset margin for right container */
+    }
+    
+    .contactus-container input[type="submit"] {
+        width: 100%; /* Make submit button full width */
+    }
+}
+
+
+    

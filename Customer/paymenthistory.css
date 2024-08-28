@@ -1,0 +1,121 @@
+ /* Sidebar Styles */
+ .sidebar {
+    color: #000;
+    padding: 20px;
+    width: 250px;
+    height: 80vh;
+    position: relative;
+    background-color: #fcfafa;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.sidebar a {
+    color: #000;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #666;
+}
+
+/* General Styles */
+.container {
+    display: flex;
+}
+
+.page-header {
+    width: calc(100% - 250px); /* Subtract sidebar width from total width */
+    padding: 0 20px;
+}
+
+.profile-content {
+    margin-top: 20px;
+}
+
+/* Payment History Item Styles */
+.payment-item {
+    background-color: #fff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 0.375rem; /* 6px */
+    padding: 1.5rem; /* 24px */
+    margin-bottom: 1.5rem; /* 24px */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-item img {
+    width: 6rem; /* 96px */
+    height: 6rem; /* 96px */
+    border-radius: 0.375rem; /* 6px */
+    margin-right: 1.5rem; /* 24px */
+}
+
+.payment-details {
+    flex: 1;
+}
+
+.payment-details .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-details .flex div {
+    width: 25%; /* 1/4 of the container */
+}
+
+.payment-details p {
+    margin: 0;
+}
+
+.payment-details p span {
+    font-weight: bold;
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto; /* Enable scrolling */
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px; /* Limit width */
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add box shadow for depth */
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.popup-content p {
+    margin: 10px 0;
+    color: #666;
+}

@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: white;
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  footer{
+
+    background: #212529; 
+    padding: 50px 60px;
+  }
+
+  footer {
+    position: relative;
+    width:100%; 
+    bottom: 0;  
+}
+
+  
+  footer .container li a{
+    font-weight: 400;
+  }
+  
+  footer .container{
+    width:100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+  
+  }
+  
+  footer .container .sec h2{
+    position: relative;
+    color : white;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  
+  footer .container .sec p{
+    color: white;
+  }
+  
+  footer .container .Follow{
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  footer .container .Follow h2{
+    font-size: 20px
+  
+  }
+  footer .container .Follow #follow_us{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+  }
+  
+  footer .container .Follow #follow_us li{
+    list-style: none;
+  }
+  
+  footer .container .Follow #follow_us li a{
+    display: inline-block;
+    width: 36px ;
+    height: 36px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  footer .container .Follow #follow_us li a i{
+    color: #fff;
+    font-size: 25px;
+  
+  }
+  
+  footer .container .quickLinks{
+    position: relative;
+  
+  }
+  
+  footer .container .quickLinks ul li{
+    list-style: none;
+  }
+  
+  footer .container .quickLinks ul li a{
+    color : white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+  
+  }
+  
+  footer .container .contact .info{
+    position : relative;
+  }
+  
+  footer .container .contact .info li{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+  
+  }
+  
+  footer .container .contact .info li span{
+    color: white;
+    font-size: 20px;
+  }
+  
+  footer .container .contact .info li a{
+    color: white;
+    text-decoration: none;
+   
+  }
+  
+   #copyrighttext{
+    padding: 20px 100px 30px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+    
+  @media (max-width: 991px){
+    footer{
+      padding: 40px;
+    }
+  
+    footer .container{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap: 20px ;
+    }
+  
+    
+   #copyrighttext{
+    padding: 20px 40px 30px;
+  
+   }
+  }
+  
+    
+  @media (max-width: 768px){
+    footer .container{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 20px ;
+    }
+  
+  }
+

@@ -1,0 +1,213 @@
+/* Main container styling */
+.checkoutcontainer {
+    max-width: 960px;
+    background: #f9f9f9;
+    padding: 30px;
+    margin: 40px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Typography */
+.checkoutcontainer h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+
+.checkoutcontainer h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.checkoutcontainer h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Layout grid */
+.checkoutcontainer form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.checkoutcontainer .left-container, .checkoutcontainer .right-container {
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+    .checkoutcontainer form {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Input and label styling */
+.checkoutcontainer label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.checkoutcontainer input[type="text"],
+.checkoutcontainer input[type="email"],
+.checkoutcontainer select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.checkoutcontainer input[type="text"]:focus,
+.checkoutcontainer input[type="email"]:focus,
+.checkoutcontainer select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Order summary styling */
+.checkoutcontainer .order-summary {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkoutcontainer .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.checkoutcontainer .summary-item.total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Payment option styling */
+.checkoutcontainer .payment-details {
+    margin-right: 80%;
+
+
+}
+
+.checkoutcontainer .paypal-option {
+    margin-top: 20px;
+   
+}
+
+.checkoutcontainer img{
+    height: 60px;
+    width: 90px;
+    margin: 10px 0;
+}
+
+
+/* Button styling */
+.checkoutcontainer button {
+    width: 100%;
+    padding: 14px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   
+
+}
+
+.checkoutcontainer button:hover {
+    background-color: crimson;
+}
+
+/* Message styling */
+.error-message, .notification-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+.notification-message {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+/* Right container styling */
+.checkoutcontainer .right-container {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkoutcontainer .right-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.checkoutcontainer .order-summary {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.checkoutcontainer .summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.checkoutcontainer .summary-item.total {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.checkoutcontainer .payment-details {
+    text-align: center;
+}
+
+.checkoutcontainer .paypal-option {
+    margin-top: 20px;
+}
+
+.checkoutcontainer .paypal-logo {
+    height: 50px;
+    width: auto;
+    margin: 10px 0;
+}
+
+.checkoutcontainer button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.checkoutcontainer button[type="submit"]:hover {
+    background-color: crimson;
+}
